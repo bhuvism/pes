@@ -1,0 +1,730 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>CodeGeeko</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== lineicons CSS ======-->
+    <link rel="stylesheet" href="assets/css/lineicons.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <script>
+        function change(){
+            document.querySelector("#myTab1").style.display="flex";
+            document.querySelector("#myTab2").style.display="none";
+        }
+
+        function change2(){
+            document.querySelector("#myTab1").style.display="none";
+            document.querySelector("#myTab2").style.display="flex";
+        }
+
+        function getvalue(e){
+            value = e.getAttribute("data-value");
+            if(value === '1-1'){
+                document.querySelector("#basic").innerHTML = '$19.00';
+                document.querySelector("#standard").innerHTML = '$29.00';
+                document.querySelector("#premium").innerHTML = '$39.00';
+            } else if(value === '1-2'){
+                document.querySelector("#basic").innerHTML = '$49.00';
+                document.querySelector("#standard").innerHTML = '$59.00';
+                document.querySelector("#premium").innerHTML = '$69.00';
+            }  else if(value === '1-3'){
+                document.querySelector("#basic").innerHTML = '$79.00';
+                document.querySelector("#standard").innerHTML = '$89.00';
+                document.querySelector("#premium").innerHTML = '$99.00';
+            } else {
+                document.querySelector("#basic").innerHTML = '$109.00';
+                document.querySelector("#standard").innerHTML = '$119.00';
+                document.querySelector("#premium").innerHTML = '$129.00';
+            }
+        }
+
+        function getvalue2(e){
+            value = e.getAttribute("data-value");
+            if(value === '1-11'){
+                document.querySelector("#basic_2").innerHTML = '$159.00';
+                document.querySelector("#standard_2").innerHTML = '$169.00';
+                document.querySelector("#premium_2").innerHTML = '$179.00';
+            } else if(value === '1-22'){
+                document.querySelector("#basic_2").innerHTML = '$189.00';
+                document.querySelector("#standard_2").innerHTML = '$199.00';
+                document.querySelector("#premium_2").innerHTML = '$209.00';
+            }  else if(value === '1-33'){
+                document.querySelector("#basic_2").innerHTML = '$219.00';
+                document.querySelector("#standard_2").innerHTML = '$229.00';
+                document.querySelector("#premium_2").innerHTML = '$239.00';
+            } else {
+                document.querySelector("#basic_2").innerHTML = '$249.00';
+                document.querySelector("#standard_2").innerHTML = '$259.00';
+                document.querySelector("#premium_2").innerHTML = '$269.00';
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/CodeGeeko_Logo_for-web.jpg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#why">Why</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#features">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#screenshots">Screenshots</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#pricing">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#download">Download</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+
+        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center">
+            
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="header-hero-content">
+                            <h3 class="header-title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s"><span>{TEXT BASED} CODING</span> </h3>
+                            <p class="text wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s">At CodeGeeko, We teach programming languages using gamification.It is the perfect way to give an amazing head-start into Real World coding for kids.</p>
+                            <ul class="d-flex">
+                                <li><a href="https://rebrand.ly/appland-ud" rel="nofollow" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">Book a Demo class</a></li>
+                            </ul>
+                        </div> <!-- header hero content -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10">
+                        <div class="header-image">
+                            <img src="assets/images/4113116.jpg" alt="app" class="image wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                            <div class="image-shape wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                <img src="assets/images/image-shape.svg" alt="shape">
+                            </div>
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-shape-1"></div> <!-- header shape -->
+            <div class="header-shape-2">
+                <img src="assets/images/header-shape-2.svg" alt="shape">
+            </div> <!-- header shape -->
+        </div> <!-- header hero -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== SERVICES PART START ======-->
+    
+    <section id="why" class="services-area pt-110 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Why CodeGeeko</h3>
+                        <p class="text">At CodeGeeko, we believe ANYONE can code, if taught in the right way. We are here to do it the right and real way.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-1 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class=" d-flex align-items-center justify-content-center">
+                            <!-- <i class="lni lni-layers"></i> -->
+                            <img src="assets/images/4112637.jpg" style="width:100%;height:100%;border-radius: 25%;">
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Gamification</a></h4>
+                            <p class="text">We motivate students to learn REAL TEXT BASED CODING by using game elements in learning environments. Our goal is to maximize enjoyment and engagement through capturing the interest of learners and inspiring them to continue learning.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-2 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class=" d-flex align-items-center justify-content-center">
+                            <!-- <i class="lni lni-layout"></i> -->
+                            <img src="assets/images/4112637.jpg" style="width:100%;height:100%;border-radius: 25%;">
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Curriculum is in line with APCSP</a></h4>
+                            <p class="text">AP CSP (Advanced Placement Computer Science Principles) spotlights how computing is changing the world, and provides ample opportunity for students from all backgrounds to connect abstract concepts to real-world implications of the field.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-3 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-bolt"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Live Classes at comfort of your home</a></h4>
+                            <p class="text">Live online classes with flexible timings that allow interaction with students in the batch.</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-services services-color-4 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-protection"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title"><a href="#">Webinars and Internships</a></h4>
+                            <p class="text">The child gets access to monthly webinars by Achievers, and a one month internship of cxo’s of startups after the completion of the course</p>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== SERVICES PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="about" class="about-area pt-70 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="about-shape"></div>
+                        <img class="app" src="assets/images/about-app.png" alt="app">
+                    </div> <!-- about image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <h3 class="title">Experience by booking
+                                1 Hour Free Trial Class</h3>
+                            <p class="text">We avail you a hour of free trail to get started
+
+                            </p>
+                        </div> <!-- section title -->
+                        <a href="https://rebrand.ly/appland-ud" rel="nofollow" class="main-btn">Register Now</a>
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    
+    <!--====== DOWNLOAD PART START ======-->
+    
+    <section id="download" class="download-area pt-70 pb-40">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="download-image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <img class="image" src="assets/images/download-app.png" alt="download">
+                        
+                        <div class="download-shape-1"></div>
+                        <div class="download-shape-2">
+                            <img class="svg" src="assets/images/download-shape.svg" alt="shape">
+                        </div>
+                    </div> <!-- download image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="download-content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <h3 class="download-title">Download and Start Using!</h3>
+                        <p class="text">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p>
+                        <ul>
+                            <li><a class="app-store" href="#"><img src="assets/images/app-store.png" alt="store"></a></li>
+                            <li><a class="play-store" href="#"><img src="assets/images/play-store.png" alt="store"></a></li>
+                        </ul>
+                    </div> <!-- download image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== DOWNLOAD PART ENDS ======-->
+
+
+    <section id="pricing" class="pricing_area pt-115 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h5 class="sub_title">Pricing Plans</h5>
+                        <h4 class="main_title">Choose Your Plan</h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pricing_menu mt-30 pb-30">
+                        <ul class="nav justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <button class="active" type="button" id="monthly-tab" data-toggle="tab" value="monthly" href="#monthly" onclick="change()" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="yearly-tab" type="button" data-toggle="tab" href="#yearly" role="tab" value="yearly" aria-controls="yearly" onclick="change2()" aria-selected="false">Yearly</button>
+                            </li>
+                        </ul><br>
+                        <ul class="nav justify-content-center" id="myTab1" role="tablist">
+                            <li class="nav-item">
+                                <button class="active" data-value="1-1" data-toggle="tab"  role="tab" aria-controls="monthly" aria-selected="true" value="1-1" onclick="getvalue(this)">1-1</button>
+                            </li>
+                            <li class="nav-item">
+                                <button data-value="1-2" data-toggle="tab"  role="tab" aria-controls="yearly" aria-selected="false" value="1-2" onclick="getvalue(this)">1-2</button>
+                            </li>
+                            <li class="nav-item">
+                                <button  data-value="1-3" data-toggle="tab"  role="tab" aria-controls="monthly" aria-selected="true" value="1-3" onclick="getvalue(this)">1-3</button>
+                            </li>
+                            <li class="nav-item">
+                                <button data-value="1-4" data-toggle="tab"  role="tab" aria-controls="yearly" aria-selected="false" value="1-4" onclick="getvalue(this)">1-4</button>
+                            </li>
+                        </ul>
+                        <ul class="nav justify-content-center" id="myTab2" role="tablist"style="display:none;">
+                            <li class="nav-item">
+                                <button class="active" data-value="1-11" data-toggle="tab"  role="tab" aria-controls="monthly" aria-selected="true" value="1-1" onclick="getvalue2(this)">1-1</button>
+                            </li>
+                            <li class="nav-item">
+                                <button data-value="1-22" data-toggle="tab"  role="tab" aria-controls="yearly" aria-selected="false" value="1-2" onclick="getvalue2(this)">1-2</button>
+                            </li>
+                            <li class="nav-item">
+                                <button  data-value="1-33" data-toggle="tab"  role="tab" aria-controls="monthly" aria-selected="true" value="1-3" onclick="getvalue2(this)">1-3</button>
+                            </li>
+                            <li class="nav-item">
+                                <button data-value="1-44" data-toggle="tab"  role="tab" aria-controls="yearly" aria-selected="false" value="1-4" onclick="getvalue2(this)">1-4</button>
+                            </li>
+                        </ul>
+                    </div> <!-- pricing menu -->
+                    
+                    <div class="pricing_content_area">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Basic</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="basic" class="pricing_price">$19.00</span>
+                                                <p><h5>Includes: </h5>
+                                                    <ul>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Access to 120+ Coding Projects</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Introduction to computer science-Python or Java Beginner :Basic Syntax,Arguments,Strings,While Loops,Variables,If Statements, Functions,Parameters</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Create your own games</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Basics of web development in this introductory HTML & CSS course.</strong></li><br>
+                                                </ul>
+                                                </p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30 active wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Standard</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="standard" class="pricing_price">$29.00</span>
+                                                <p><h5>Includes: </h5>
+                                                    <ul>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Access to 120+ Coding Projects</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Introduction to computer science-Python or Java Beginner :Basic Syntax,Arguments,Strings,While Loops,Variables,If Statements, Functions,Parameters</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Create your own games</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Basics of web development in this introductory HTML & CSS course.</strong></li><br>
+                                                </ul></p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Premium</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="premium" class="pricing_price">$39.00</span>
+                                                <p><h5>Includes: </h5>
+                                                    <ul>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Access to 120+ Coding Projects</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Introduction to computer science-Python or Java Beginner :Basic Syntax,Arguments,Strings,While Loops,Variables,If Statements, Functions,Parameters</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Create your own games</strong></li><br>
+                                                    <li><strong><i class="lni lni-checkmark-circle"></i>&nbsp; Basics of web development in this introductory HTML & CSS course.</strong></li><br>
+                                                </ul> </p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                </div> <!-- row -->
+                            </div>
+                            <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Basic</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="basic_2" class="pricing_price">$159.00</span>
+                                                <p>Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30 active">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Standard</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="standard_2" class="pricing_price">$169.00</span>
+                                                <p>Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-7 col-sm-9">
+                                        <div class="single_pricing text-center mt-30">
+                                            <div class="pricing_title">
+                                                <h4 class="title">Premium</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content">
+                                                <span id="premium_2" class="pricing_price">$179.00</span>
+                                                <p>Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                                <a href="" class="main-btn">Choose Plan</a>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                </div> <!-- row -->
+                            </div>
+                        </div>
+                    </div> <!-- pricing menu -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+
+      <!--====== CONTACT PART START ======-->
+
+      <section id="contact" class="contact_area pt-70 pb-120">
+        <div class="contact_image d-flex align-items-center justify-content-end">
+            <div class="image">
+                <img class="wow fadeInLeftBig" data-wow-duration="2s" data-wow-delay="0.4s" src="assets/images/4112637.jpg" alt="about">
+            </div>
+        </div> <!-- about image -->
+        
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <div class="contact_wrapper mt-45 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">
+                        <div class="section_title pb-15">
+                            <h5 class="sub_title">Contact</h5>
+                            <h4 class="main_title">Get In Touch</h4>
+                            <p>Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        </div> <!-- section title -->
+                        
+                        <div class="contact_form">
+                            <form id="contact-form" action="assets/contact.php">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single_form">
+                                            <input name="name" type="text" placeholder="Name">
+                                        </div> <!-- single form -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single_form">
+                                            <input name="email" type="email" placeholder="Email">
+                                        </div> <!-- single form -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="single_form">
+                                            <textarea name="message" placeholder="Message"></textarea>
+                                        </div> <!-- single form -->
+                                    </div>
+                                    <p class="form-message"></p>
+                                    <div class="col-md-12">
+                                        <div class="single_form">
+                                            <button class="main-btn">Submit</button>
+                                        </div> <!-- single form -->
+                                    </div>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- contact form -->
+                    </div> <!-- contact wrapper -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== PART START ======-->
+    
+    <footer id="footer" class="footer-area">
+        
+        <div class="footer-shape shape-1"></div>
+        <div class="footer-shape shape-2"></div>
+        <div class="footer-shape shape-3"></div>
+        <div class="footer-shape shape-4"></div>
+        <div class="footer-shape shape-5"></div>
+        <div class="footer-shape shape-6"></div>
+        <div class="footer-shape shape-7"></div>
+        <div class="footer-shape shape-8">
+            <img class="svg" src="assets/images/footer-shape.svg" alt="Shape">
+        </div>
+        
+        <div class="footer-widget pt-30 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            <a class="logo" href="#" >
+                                <img src="assets/images/CodeGeeko_Logo_for-web.jpg" alt="Logo">
+                            </a>
+                            <p class="text">At CodeGeeko we use "Gamification" to teach Programming to kids which has exciting visuals.We provide arenas and challenges that help kids to be motivated every step ahead.Teachers are personally trained by us to teach kids. We provide support beyond classroom i.e extra practice sessions to clear the child’s doubts in time.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="lni lni-facebook"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter"></i></a></li>
+                                <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div> 
+                    <div class="col-lg-5 col-md-6">
+                        <div class="footer-link d-flex flex-wrap">
+                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                                <div class="footer-title">
+                                    <h4 class="title">Quick Links</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a class="" href="#">Home</a></li>
+                                    <li><a class="" href="#">Features</a></li>
+                                    <li><a class="" href="#">Testimonial</a></li>
+                                    <li><a class="" href="#">Pricing</a></li>
+                                    <li><a class="" href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer link wrapper -->
+                            
+                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                                <div class="footer-title">
+                                    <h4 class="title">Support</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a class="" href="#">FAQ</a></li>
+                                    <li><a class="" href="#">Privacy Policy</a></li>
+                                    <li><a class="" href="#">Terms Of Use</a></li>
+                                    <li><a class="" href="#">Legal</a></li>
+                                    <li><a class="" href="#">Site Map</a></li>
+                                </ul>
+                            </div> <!-- footer link wrapper -->
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                            <div class="footer-title">
+                                <h4 class="title">Quick Link</h4>
+                            </div>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-info d-flex">
+                                        <div class="info-content media-body">
+                                            <p class="text"><i class="lni lni-phone"></i> +809272561823</p>
+                                        </div>
+                                    </div> <!-- contact info -->
+                                </li>
+                                <li>
+                                    <div class="contact-info d-flex">
+                                        <div class="info-content media-body">
+                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> info@appland.com</a></p>
+                                        </div>
+                                    </div> <!-- contact info -->
+                                </li>
+                                <li>
+                                    <div class="contact-info d-flex">
+                                        <div class="info-content media-body">
+                                            <p class="text"><a href="#"><i class="lni lni-world"></i> www.yourweb.com</a></p>
+                                        </div>
+                                    </div> <!-- contact info -->
+                                </li>
+                                <li>
+                                    <div class="contact-info d-flex">
+                                        <div class="info-content media-body">
+                                            <p class="text"><i class="lni lni-map"></i> 123 Stree New York City , United States Of America 750.</p>
+                                        </div>
+                                    </div> <!-- contact info -->
+                                </li>
+                            </ul> <!-- contact list -->
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-sm-flex justify-content-between">
+                            <div class="copyright-text text-center">
+                                <p class="text">Template Crafted by <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
+                            </div> <!-- copyright text -->
+                            
+                            <div class="copyright-privacy text-center">
+                                <a href="#">Report Issues</a>
+                            </div> <!-- copyright privacy -->
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    
+    <!--====== PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    
+    <!--====== PART START ======-->
+    
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div> 
+            </div>
+        </div>
+    </section>
+-->
+    
+    <!--====== PART ENDS ======-->
+    
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
